@@ -17,3 +17,7 @@ http://www.django-rest-framework.org/tutorial/2-requests-and-responses/
 - Introduce wrappers for @api_view function based views and APIView for class-based views
 - Added format types (ie. json and html)
 - Introduced Browsability API (http://www.django-rest-framework.org/topics/browsable-api/)
+
+# 3. Class-based Views
+http://www.django-rest-framework.org/tutorial/3-class-based-views/
+- Use Class-based views (ie. APIView) 

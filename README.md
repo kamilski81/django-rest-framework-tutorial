@@ -1,4 +1,4 @@
-# Serialization
+# 1. Serialization
 http://www.django-rest-framework.org/tutorial/1-serialization/
 - Setup an environment
 - Add Project tutorial
@@ -11,10 +11,9 @@ http://www.django-rest-framework.org/tutorial/1-serialization/
 - Learn how to work with Serializers
 - Work with views and write native Django code for JSON serialization and deserialization
 
-
-
-
-
-
-
- 
+# 2. Requests and Responses
+http://www.django-rest-framework.org/tutorial/2-requests-and-responses/
+- Introduce REST Request, Response, Status objects
+- Introduce wrappers for @api_view function based views and APIView for class-based views
+- Added format types (ie. json and html)
+- Introduced Browsability API (http://www.django-rest-framework.org/topics/browsable-api/)

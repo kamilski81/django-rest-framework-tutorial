@@ -9,6 +9,7 @@ http://www.django-rest-framework.org/tutorial/1-serialization/
 - Create migrations
 - Create serializers using serializers.Serializer
 - Learn how to work with Serializers
+- Work with views and write native Django code for JSON serialization and deserialization
 
 
 

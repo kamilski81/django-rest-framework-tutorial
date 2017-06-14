@@ -42,3 +42,8 @@ http://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-ap
     * Our snippet and user serializers include 'url' fields that by default will refer to '{model_name}-detail', which in this case will be 'snippet-detail' and 'user-detail'.
 - Add pagination    
     
+# 6. ViewSets and Routers
+http://www.django-rest-framework.org/tutorial/6-viewsets-and-routers/
+- Create ViewSets from existing views
+- Create a Router that binds all of the ViewSets and automatically creates all URLs
+- ViewSets are less explicit but are quicker to develop, and maintain.     

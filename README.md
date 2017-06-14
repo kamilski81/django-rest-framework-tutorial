@@ -51,6 +51,8 @@ http://www.django-rest-framework.org/tutorial/6-viewsets-and-routers/
 # 7. Schemas & client libraries
 http://www.django-rest-framework.org/tutorial/7-schemas-and-client-libraries/
 
+# 8. Django REST Swagger
+https://github.com/marcgibbons/django-rest-swagger
 
 
 ## Final Words:

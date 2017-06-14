@@ -29,3 +29,16 @@ http://www.django-rest-framework.org/tutorial/4-authentication-and-permissions/
 - Add permissions so that you have to be logged in to Create a Snippet
 - Add permissions so that only the owner can update/delete a Snippet (object permissions)
 - Read more about Authentication if necessary: http://www.django-rest-framework.org/api-guide/authentication/
+
+# 5. Relationships & Hyperlinked APIs
+http://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/
+- Create an endpoint for root of API
+- Create an endpoint for highlighted snippets
+- Hyperlink API so things are more easily clickable and browsable
+- Name the URL patterns so it's easier to reference URLs from fields:
+    * The root of our API refers to 'user-list' and 'snippet-list'.
+    * Our snippet serializer includes a field that refers to 'snippet-highlight'.
+    * Our user serializer includes a field that refers to 'snippet-detail'.
+    * Our snippet and user serializers include 'url' fields that by default will refer to '{model_name}-detail', which in this case will be 'snippet-detail' and 'user-detail'.
+- Add pagination    
+    

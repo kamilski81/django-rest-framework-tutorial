@@ -47,3 +47,13 @@ http://www.django-rest-framework.org/tutorial/6-viewsets-and-routers/
 - Create ViewSets from existing views
 - Create a Router that binds all of the ViewSets and automatically creates all URLs
 - ViewSets are less explicit but are quicker to develop, and maintain.     
+
+# 7. Schemas & client libraries
+http://www.django-rest-framework.org/tutorial/7-schemas-and-client-libraries/
+
+
+
+## Final Words:
+Contribute on GitHub by reviewing and submitting issues, and making pull requests. (https://github.com/encode/django-rest-framework)
+Join the REST framework discussion group, and help build the community. (https://groups.google.com/forum/?fromgroups#!forum/django-rest-framework)
+Follow the author on Twitter and say hi. (https://twitter.com/_tomchristie)

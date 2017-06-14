@@ -21,3 +21,11 @@ http://www.django-rest-framework.org/tutorial/2-requests-and-responses/
 # 3. Class-based Views
 http://www.django-rest-framework.org/tutorial/3-class-based-views/
 - Use Class-based views (ie. APIView) 
+
+# 4. Authentication and Permissions
+http://www.django-rest-framework.org/tutorial/4-authentication-and-permissions/
+- Associate the Snippet model with a User (owner)
+- Serialize the Snippet with a ForeignKey User b/c you have to be explicit with relationships
+- Add permissions so that you have to be logged in to Create a Snippet
+- Add permissions so that only the owner can update/delete a Snippet (object permissions)
+- Read more about Authentication if necessary: http://www.django-rest-framework.org/api-guide/authentication/

@@ -54,8 +54,11 @@ http://www.django-rest-framework.org/tutorial/7-schemas-and-client-libraries/
 # 8. Django REST Swagger
 https://github.com/marcgibbons/django-rest-swagger
 
+# 9. Django HTML Forms with a Serializer
+- http://www.django-rest-framework.org/topics/html-and-forms/
+- http://www.django-rest-framework.org/api-guide/fields/
 
-## Final Words:
+## Last Words:
 Contribute on GitHub by reviewing and submitting issues, and making pull requests. (https://github.com/encode/django-rest-framework)
 Join the REST framework discussion group, and help build the community. (https://groups.google.com/forum/?fromgroups#!forum/django-rest-framework)
 Follow the author on Twitter and say hi. (https://twitter.com/_tomchristie)

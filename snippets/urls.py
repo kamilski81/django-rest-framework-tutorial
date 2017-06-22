@@ -8,4 +8,5 @@ router.register(r'users', views.UserViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls)),
+    url(r'^search/$', views.SearchView.as_view(), name='search')
 ]

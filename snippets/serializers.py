@@ -18,3 +18,32 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
         fields = ('url', 'id', 'username', 'snippets')
+
+
+class SearchSerializer(serializers.Serializer):
+    time_frame_choices = [('current', 'Current'), ('past-week', 'Past Week'), ('past-month', 'Past Month')]
+    time_frame = serializers.ChoiceField(time_frame_choices)
+
+    vulnerability_choices = [('low', 'Low'), ('medium', 'Medium'), ('high', 'High'), ]
+    vulnerability = serializers.MultipleChoiceField(vulnerability_choices)
+
+    # @kamquestion: what's this help_text mean?
+    display_only_recent_increases = serializers.BooleanField()
+
+    length_of_stay_choices = [('all', 'All'), ]
+    length_of_stay = serializers.ChoiceField(length_of_stay_choices)
+
+    advance_directives_choices = [('all', 'All'), ]
+    advance_directives = serializers.ChoiceField(advance_directives_choices)
+
+    discharged_to_choices = [('hospital', 'Hospital'), ('nursing-home', 'Nursing Home')]
+    discharged_to = serializers.MultipleChoiceField(discharged_to_choices)
+
+    admission_diagnoses_choices = [('none', 'None'), ]
+    admission_diagnoses = serializers.ChoiceField(admission_diagnoses_choices)
+
+    outcomes_choices = [('bad-vision', 'Bad Vision'), ('delirium', 'Delirium'), ]
+    outcomes = serializers.MultipleChoiceField(outcomes_choices)
+
+    # @kamquestion: what's this help_text mean?
+    all_recent_outcomes = serializers.BooleanField()

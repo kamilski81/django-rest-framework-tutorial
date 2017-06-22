@@ -1,13 +1,15 @@
 from django.contrib.auth.models import User
 from snippets.models import Snippet
-from snippets.serializers import SnippetSerializer, UserSerializer
+from snippets.serializers import SnippetSerializer, UserSerializer, SearchSerializer
 from snippets.permissions import IsOwnerOrReadOnly
-from rest_framework import generics, renderers
+from rest_framework import renderers
 from rest_framework import permissions
-from rest_framework.reverse import reverse
+from django.shortcuts import redirect
 from rest_framework.response import Response
-from rest_framework.decorators import api_view, detail_route
+from rest_framework.decorators import detail_route
 from rest_framework import viewsets
+from rest_framework.renderers import TemplateHTMLRenderer
+from rest_framework.views import APIView
 
 
 class SnippetViewSet(viewsets.ModelViewSet):
@@ -36,3 +38,19 @@ class UserViewSet(viewsets.ReadOnlyModelViewSet):
     """
     queryset = User.objects.all()
     serializer_class = UserSerializer
+
+
+class SearchView(APIView):
+    renderer_classes = [TemplateHTMLRenderer]
+    template_name = 'search.html'
+
+    def get(self, request):
+        serializer = SearchSerializer()
+        return Response({'serializer': serializer})
+
+    def post(self, request):
+        data = request.data
+        serializer = SearchSerializer(data=data)
+        if not serializer.is_valid():
+            return Response({'serializer': serializer})
+        return redirect('snippet-list')

@@ -58,6 +58,9 @@ https://github.com/marcgibbons/django-rest-swagger
 - http://www.django-rest-framework.org/topics/html-and-forms/
 - http://www.django-rest-framework.org/api-guide/fields/
 
+# 10. Add Token Based Authentication
+http://www.django-rest-framework.org/api-guide/authentication/#tokenauthentication (Don't forget to add DEFAULT_AUTHENTICATION_CLASSES in settings.py)
+
 ## Last Words:
 Contribute on GitHub by reviewing and submitting issues, and making pull requests. (https://github.com/encode/django-rest-framework)
 Join the REST framework discussion group, and help build the community. (https://groups.google.com/forum/?fromgroups#!forum/django-rest-framework)

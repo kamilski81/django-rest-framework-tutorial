@@ -60,6 +60,11 @@ https://github.com/marcgibbons/django-rest-swagger
 
 # 10. Add Token Based Authentication
 http://www.django-rest-framework.org/api-guide/authentication/#tokenauthentication (Don't forget to add DEFAULT_AUTHENTICATION_CLASSES in settings.py)
+To test your auth:
+- export JWT_AUTH_PREFIX=Token && http --auth-type=jwt --auth="e26619793d84b7c4037a556be8a58e3e0ea02528" http://localhost:8000/snippets/ -v
+- curl -X GET http://127.0.0.1:8000/snippets/ -H 'Authorization: Token 9944b09199c62bcf9418ad846dd0e4bbdfc6ee4b'
+- http POST http://localhost:8000/api-token-auth/ username=kamilski81 password=******** -v
+
 
 ## Last Words:
 Contribute on GitHub by reviewing and submitting issues, and making pull requests. (https://github.com/encode/django-rest-framework)
